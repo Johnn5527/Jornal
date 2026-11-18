@@ -18,12 +18,14 @@ nav{display:flex;gap:12px;align-items:center;padding:10px 0 16px}button{font:inh
 <div class="page"><img src="pages/p5.jpg" alt="Página 5 do jornal Trama Cultural" loading="lazy"></div>
 <div class="page"><img src="pages/p6.jpg" alt="Página 6 do jornal Trama Cultural" loading="lazy"></div>
 <div class="page"><img src="pages/p7.jpg" alt="Página 7 do jornal Trama Cultural" loading="lazy"></div>
-<div class="page" data-density="hard"><img src="pages/p8.jpg" alt="Página 8 — contracapa com QR code para a versão digital" loading="lazy"></div>
+<div class="page"><img src="pages/p8.jpg" alt="Página 8 — Rodada Cultural de dezembro em SP: Feira Folhetaria e Natal Radical Ibirapuera" loading="lazy"></div>
+<div class="page"><img src="pages/p9.jpg" alt="Página 9 — Rodada Cultural de dezembro em SP: 39º Panorama da Arte Brasileira no MAM" loading="lazy"></div>
+<div class="page" data-density="hard"><img src="pages/p10.jpg" alt="Página 10 — contracapa com contato: Instagram @_tramacultural" loading="lazy"></div>
 </div><div id="fade"><img id="fimg" src="pages/p1.jpg" alt="Página 1 — capa"></div></div>
-<nav><button id="prev" aria-label="Página anterior">‹ Anterior</button><span id="count" aria-live="polite">Página 1 de 8</span><button id="next" aria-label="Próxima página">Próxima ›</button></nav>
+<nav><button id="prev" aria-label="Página anterior">‹ Anterior</button><span id="count" aria-live="polite">Página 1 de 10</span><button id="next" aria-label="Próxima página">Próxima ›</button></nav>
 <script src="js/page-flip.browser.js"></script>
 <script>
-const N=8,reduced=matchMedia('(prefers-reduced-motion: reduce)').matches,c=document.getElementById('count'),pv=document.getElementById('prev'),nx=document.getElementById('next');
+const N=10,reduced=matchMedia('(prefers-reduced-motion: reduce)').matches,c=document.getElementById('count'),pv=document.getElementById('prev'),nx=document.getElementById('next');
 function upd(i){c.textContent='Página '+(i+1)+' de '+N;pv.disabled=i<=0;nx.disabled=i>=N-1}
 for(let i=1;i<=N;i++){const im=new Image();im.src='pages/p'+i+'.jpg'}
 let go;
